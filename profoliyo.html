@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/893c47baa7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="Image/croped.png" alt="logo">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </nav>
+<div class="header-text">
+    <p>Full-stack ASP.NET developer</p>
+    <h1>Hi, I'm <span>Rinshad</span> V.V from India</h1>
+
+</div>
+        </div>
+        
+    </div>
+<!------------------about----------------------->
+    <div id="about">
+        <div class="container">
+           <div class="row">
+            <div class="about-col-1">
+                <img src="Image/Untitled design-Photoroom.png" alt="user">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm an electrical engineer with more than 12 years of experience from three foreign countries: 
+                the UAE, Qatar, and Kuwait. But my passion is to be a software developer, so I decided to learn 
+                some from Youtube and Google, but it was not enough for me, so I started learning that all in a 
+                professional way from Aitrich Technologies Thrissur, and now I'm holding some certificates from 
+            there.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                    <div class="tab-contents active-tab" id="skills">
+                     <ul>
+                        <li><span>UI UX</span><br>UX Thinking & UX Engineering,UI Designing, Wireframes, UI Prototyping & Mocking  Figma</li>
+                        <li><span>Web Development</span><br>HTML5, CSS3,JavaScript,Bootstrap</li>
+                        <li><span>System Analyst</span><br>System Analysis & Design, RequirmentsEngineering, SRS,UML-Use Case Diagram, Domine Modeling Fundamentals, BPMN</li>
+                        <li><span>Software Engineer Trainee</span><br>Software Engineering Fundamentals, Software Development Lifecycle, Requirments Engineering, Software System Overview, Project Management, Project Planning & Estimation, SCM & Git Fundamentals, Tools: Trello, Google Workspace</li>
+                    <li><span>JavaScript Developer</span><br>JavaScript Fundamentals, Object Oriented Programming, Fundamental Programming, Documment Object Model </li>
+                    <li><span>Agile Practitioner</span><br> Agile Principles & Practices, Scrum, Kanban, Extreme Programming(xp)</li>
+                    </ul> 
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-current</span><br> Full-stack ASP.NET core Devolper(InternShip) at Aitrich</li>
+                        <li><span>2022-2023</span><br> Electrical Engineer at Kuwait</li>
+                        <li><span>2017-2021</span> <br>Room-Technician at Qatar</li>
+                        <li><span>2014-2017</span><br> Electrician at UAE</li>
+                        <li><span>2012-2014</span><br> Service Technican at Calicut</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>National ITI Malapuram</span><br> Electrical(NCVT)</li>
+                        
+
+                    </ul>
+                </div>
+        </div>
+           </div> 
+        </div>
+    </div>
+    <!----------------------------------contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rinshucat@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +919072810444</p>
+                <div class="social-icons">
+                    <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="http://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Image/RINSHAD RESUME.docx" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2" >Submit</button>
+                </form>
+            </div>
+<div>
+    
+</div>
+            </div>
+
+        </div>
+        <div class="copyright">
+           <p>copyright &#169 Rinshad.  </p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
