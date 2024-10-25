@@ -169,7 +169,7 @@ width: 50%;
   
 
 .work{
-    border-radius: 10;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
