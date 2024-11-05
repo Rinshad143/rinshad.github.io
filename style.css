@@ -153,7 +153,7 @@ width: 50%;
    
 }
 .come{
-    color: gray;
+    color:#b54769;
     font-size: large;
     animation: fadeandscale .8s ease-in infinite;
 }
@@ -304,8 +304,9 @@ padding: 25px;
 background: #262626;
 font-weight: 300;
 margin-top: 20px;
-
-
+}
+.copyright span{
+    color: #ff004f;
 }
 #msg{
     color:#61b752;
